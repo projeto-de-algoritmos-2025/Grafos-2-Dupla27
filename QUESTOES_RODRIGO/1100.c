@@ -50,7 +50,7 @@ int posicao_valida(int x, int y) {
     return (x >= 0 && x < TAMANHO && y >= 0 && y < TAMANHO);
 }
 
-int dijkstra(int origem_x, int origem_y, int destino_x, int destino_y) {
+int djikstra(int origem_x, int origem_y, int destino_x, int destino_y) {
     // Vetores de movimento do cavalo
     int dx[] = {1, 2, 2, 1, -1, -2, -2, -1};
     int dy[] = {2, 1, -1, -2, -2, -1, 1, 2};
@@ -116,7 +116,7 @@ int main() {
         int destino_y = destino_str[1] - '1';
 
         // Calcula a menor quantidade de movimentos
-        int movimentos = dijkstra(origem_x, origem_y, destino_x, destino_y);
+        int movimentos = djikstra(origem_x, origem_y, destino_x, destino_y);
 
         // Imprime o resultado
         printf("To get from %s to %s takes %d knight moves.\n", origem_str, destino_str, movimentos);
