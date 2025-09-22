@@ -10,7 +10,7 @@ int visitado[MAX_VERTICES];
 char componente[MAX_VERTICES];
 int tamanho_componente;
 
-// Função para comparação para qsort - função na biblioteca C para ordenação de Arrays
+// Função para comparação para qsort - função na biblioteca C para ordenação dos componentes ao final.
 int comparar_char(const void *a, const void *b) {
     return (*(char *)a - *(char *)b);
 }
